@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+body{
+    transition: 1000ms;
+}
+
+.darkmode{
+    background-color: rgb(17, 17, 17);
+    color: rgb(240, 240, 240);
+    transition: 1000ms;
+}
+
+svg:hover{
+    cursor: pointer;
+    transform: scale(110%);
+    transition: 300ms;
+}
+
+
