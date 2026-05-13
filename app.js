@@ -26,8 +26,8 @@ function processarDados(lista) {
 }
 
 function estilizarMural() {
-    body.className = "flex flex-col  p-2.5 bg-gray-100"; 
-    main.classList.add("columns-1","lg:columns-3","md:columns-2", "gap-15");
+    body.className = "flex flex-col  p-2.5 bg-indigo-100"; 
+    main.classList.add("columns-1","lg:columns-3","md:columns-2", "gap-15", "p-8");
 }
 // Cria container para a imagem e o texto
 function inserirConteudo(urlImg, nomeAutor) {
@@ -37,7 +37,7 @@ function inserirConteudo(urlImg, nomeAutor) {
 
     const img = document.createElement('img');
     img.src = urlImg;
-    
+    img.classList.add("rounded-lg", "shadow-md", "grayscale-80", 'hover:grayscale-0', 'hover:scale-103', 'md:scale-105', 'duration-250');
 
     const p = document.createElement('p');
     p.innerText = `Autor: ${nomeAutor}`;
@@ -68,3 +68,9 @@ button.addEventListener('click', () => {
         button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576C388.8 576 451.3 548.8 497.3 504.6C504.6 497.6 506.7 486.7 502.6 477.5C498.5 468.3 488.9 462.6 478.8 463.4C473.9 463.8 469 464 464 464C362.4 464 280 381.6 280 280C280 207.9 321.5 145.4 382.1 115.2C391.2 110.7 396.4 100.9 395.2 90.8C394 80.7 386.6 72.5 376.7 70.3C358.4 66.2 339.4 64 320 64z"/></svg>';
     }
 });
+
+
+function colorir(){
+
+
+}
