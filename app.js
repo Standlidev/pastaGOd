@@ -5,7 +5,7 @@ const button = document.querySelector('svg');
 const nav = document.querySelector('nav');
 
 nav.classList.add('justify-end', 'flex');
-button.classList.add('size-10', 'm-5', 'z-10');
+button.classList.add('size-8','md:size-12', 'm-2', 'z-10');
 
 //Função para buscar url da IMG junta com o autor
 async function getDados(url) {
@@ -27,7 +27,7 @@ function processarDados(lista) {
 
 function estilizarMural() {
     body.className = "flex flex-col  p-2.5 bg-gray-100"; 
-    main.classList.add("columns-3", "gap-15");
+    main.classList.add("columns-1","lg:columns-3","md:columns-2", "gap-15");
 }
 // Cria container para a imagem e o texto
 function inserirConteudo(urlImg, nomeAutor) {
